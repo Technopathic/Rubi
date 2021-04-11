@@ -12,7 +12,7 @@ Via NPM:
 npm install rubi --save
 ```
 
-![Example Code](https://technopathic.github.io/Rubi/example.svg)
+![Example Code](https://technopathic.github.io/Rubi/example2.svg)
 
 <details>
 <summary>Copyable Code</summary>
