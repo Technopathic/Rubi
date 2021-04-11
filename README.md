@@ -5,20 +5,23 @@ Rubi characters are small superscript texts placed above or to the right of norm
 [Check out the Demo](https://technopathic.github.io/Rubi/)
 
 For more information on Rubi Characters, check out this [Wiki article](https://en.wikipedia.org/wiki/Ruby_character)
+
+![Example Render](https://technopathic.github.io/Rubi/example3.png)
+
 ## Getting Started
 
 Via NPM: 
 ```
-npm install rubi --save
+npm install rubi-text --save
 ```
 
-![Example Code](https://technopathic.github.io/Rubi/example2.svg)
+![Example Code](https://technopathic.github.io/Rubi/example4.svg)
 
 <details>
 <summary>Copyable Code</summary>
 
 ```
-import Rubi from 'rubi'
+import Rubi from 'rubi-text'
 
 const App = () => <Rubi text="Kernel">Colonel</Rubi>
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Rubi from 'rubi'
-import 'Rubi/dist/index.css'
+import Rubi from "rubi-text"
+import 'rubi-text/dist/index.css'
 
 const App = () => {
 
