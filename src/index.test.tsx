@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import Rubi from '.'
 
-describe('ExampleComponent', () => {
+describe('initialization', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(Rubi).toBeTruthy()
   })
 })
