@@ -20,11 +20,7 @@ npm install rubi --save
 ```
 import Rubi from 'rubi'
 
-const App = () => (
-  <p>
-    <Rubi text="Kernel" justify>Colonel</Rubi> Sanders was the <Rubi text="fir">1</Rubi>st president of the <Rubi text="United States" lowerSpacing attachAfter=".">US</Rubi>
-  </p>
-)
+const App = () => <Rubi text="Kernel">Colonel</Rubi>
 
 export default App
 ```
@@ -46,6 +42,8 @@ export default App
 | lowerCenter  | boolean | false     | Centers normal text to width of Rubi text | No        |
 | attachAfter  | string  | none      | Add string after each char in normal text | No        |
 
+Be sure to check out the example folder to see these properties in action.
+
 ## FAQ
 
 ### Will this support other writing systems?
@@ -59,7 +57,7 @@ I liked the concept and figured myself and other people would find it useful.
 
 ### Do you profit from this?
 Nope. Would appreciate a follow, though. 
-[Twitter](https://twitter.com/NowNanoTV)
+[Twitter](https://twitter.com/NowNanoTV) | 
 [Twitch](https://www.twitch.tv/NowNano)
 
 ### My Rubi characters are overlapping?
