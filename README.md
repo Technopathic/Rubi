@@ -58,6 +58,9 @@ No relation. "Ruby" or "Rubi" is just what it's called. I could have gone for "R
 ### Why did you build this?
 I liked the concept and figured myself and other people would find it useful. 
 
+### HTML5 <ruby> already exists?
+It does! And we actually use that here for semantic correctness. This component essentially makes it look better to write in your code. We also add several additional properties to improve readability. 
+
 ### Do you profit from this?
 Nope. Would appreciate a follow, though. 
 [Twitter](https://twitter.com/NowNanoTV) | 

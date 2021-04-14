@@ -19,12 +19,7 @@ code {
     monospace;
 }
 
-.demo {
-  line-height:32px;
-}
-
 .demo2 {
-  line-height:64px;
   font-size: 2rem;
 }
 

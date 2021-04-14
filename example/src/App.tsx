@@ -7,9 +7,9 @@ const App = () => {
 
   return (
     <>
-      <div className="demo">
+      <div>
         <p>
-          <Rubi text="Kernel" justify>Colonel</Rubi> Sanders was the <Rubi text="fir">1</Rubi>st president of the <Rubi text="United States" lowerSpacing attachAfter=".">US</Rubi>
+          <Rubi text="Kernel">Colonel</Rubi> Sanders was the <Rubi text="fir">1</Rubi>st president of the <Rubi text="United States" lowerSpacing attachAfter=".">US</Rubi>
         </p>
         <p>
           <Rubi text="Kernel" justify>Colonel</Rubi> Sanders was the <Rubi text="fir">1</Rubi>st president of the <Rubi text="United States" lowerCenter>U.S.</Rubi>
@@ -21,9 +21,9 @@ const App = () => {
         </p>
       </div>
       <div className="divider" />
-      <div className="demo font">
+      <div className="font">
         <p>
-          <Rubi text="Kernel" justify>Colonel</Rubi> Sanders was the <Rubi text="fir">1</Rubi>st president of the <Rubi text="United States" lowerSpacing attachAfter=".">US</Rubi>
+          <Rubi text="Kernel">Colonel</Rubi> Sanders was the <Rubi text="fir">1</Rubi>st president of the <Rubi text="United States" lowerSpacing attachAfter=".">US</Rubi>
         </p>
         <p>
           <Rubi text="Kernel" justify>Colonel</Rubi> Sanders was the <Rubi text="fir">1</Rubi>st president of the <Rubi text="United States" lowerCenter>U.S.</Rubi>

@@ -22,28 +22,19 @@ const Rubi = ({ text, children, size, offsetX, offsetY, color, align, justify, l
     if (upperRef.current && lowerSpacing || upperRef.current && lowerCenter) {
       setLowerWidth(upperRef.current.getBoundingClientRect().width)
     }
+    console.log(`${offsetY * -1}px`)
   }, [upperRef])
 
-  const container = {
-    display: "inline-block"
-  } as React.CSSProperties
-
-  const column = {
-    position: "relative"
-  } as React.CSSProperties
-
   const upper = {
-    position: "absolute",
-    left: offsetX ? `${offsetX}px` : "0px",
-    top: offsetY ? `${offsetY * -1}px` : "0px",
-    textAlign: align || "center",
+    marginLeft: offsetX ? `${offsetX}px` : "0px",
+    marginBottom: offsetY ? `${offsetY * -1}px` : "0px",
     display: "flex",
-    justifyContent: justify ? "space-between" : "center",
+    justifyContent: justify ? "space-between" : align === "left" ? "flex-start" : align === "right" ? "flex-end" : "center",
     fontSize: size || "12px",
     width: lowerSpacing || lowerCenter ? "auto" : "100%",
     whiteSpace: "nowrap",
     color: color || "initial",
-    lineHeight: "0px"
+    lineHeight: "normal"
   } as React.CSSProperties
 
   const lower = {
@@ -60,12 +51,12 @@ const Rubi = ({ text, children, size, offsetX, offsetY, color, align, justify, l
   const renderSpacing = () => children.split("").map((item, i) => (<span key={i}>{item}{attachAfter}</span>))
 
   return (
-    <div style={container}>
-      <div style={column}>
-        <div style={upper} ref={upperRef}>{justify ? renderJustify() : text}</div>
-        <div style={lowerSpacing || lowerCenter ? { ...lower, ...getWidth } : lower}>{lowerSpacing ? renderSpacing() : children}</div>
-      </div>
-    </div>
+    <ruby>
+      <rp>(</rp>
+      <rt style={upper} ref={upperRef}>{justify ? renderJustify() : text}</rt>
+      <rp>)</rp>
+      <span style={lowerSpacing || lowerCenter ? { ...lower, ...getWidth } : lower}>{lowerSpacing ? renderSpacing() : children}</span>
+    </ruby>
   )
 }
 
